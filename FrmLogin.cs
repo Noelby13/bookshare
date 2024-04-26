@@ -21,41 +21,6 @@ namespace SistemaBookShare
             InitializeComponent();
         }
 
-        private void txtUser_Click(object sender, EventArgs e)
-        {
-            Color campoInactivo = Color.FromArgb(144, 148, 165);
-
-            if (txtUser.Text == "Usuario")
-            {
-                txtUser.Text = "";
-                txtUser.ForeColor = Color.Black;
-            }
-
-            if (txtContra.Text == "")
-            {
-                txtContra.UseSystemPasswordChar = false;
-                txtContra.Text = "Contraseña";
-                txtContra.ForeColor = Color.FromArgb(144, 148, 165);
-
-            }
-        }
-
-        private void txtContra_Click(object sender, EventArgs e)
-        {
-            if (txtContra.Text == "Contraseña")
-            {
-                txtContra.Text = "";
-                txtContra.UseSystemPasswordChar = true;
-                txtContra.ForeColor = Color.Black;
-            }
-
-            if (txtUser.Text == "")
-            {
-                txtUser.Text = "Usuario";
-                txtUser.ForeColor = Color.FromArgb(144, 148, 165);
-            }
-        }
-
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -95,6 +60,44 @@ namespace SistemaBookShare
         }
 
 
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtContra_Click(object sender, EventArgs e)
+        {
+            if (txtContra.Text == "Contraseña")
+            {
+                txtContra.Text = "";
+                txtContra.UseSystemPasswordChar = true;
+                txtContra.ForeColor = Color.Black;
+            }
+
+            if (txtUser.Text == "")
+            {
+                txtUser.Text = "Usuario";
+                txtUser.ForeColor = Color.FromArgb(144, 148, 165);
+            }
+        }
+
+        private void txtUser_Click(object sender, EventArgs e)
+        {
+            if (txtUser.Text == "Usuario")
+            {
+                txtUser.Text = "";
+                txtUser.ForeColor = Color.Black;
+            }
+
+            if (txtContra.Text == "")
+            {
+                txtContra.UseSystemPasswordChar = false;
+                txtContra.Text = "Contraseña";
+                txtContra.ForeColor = Color.FromArgb(144, 148, 165);
+            }
+        }
+
         private void chkContraseña_CheckedChanged(object sender, EventArgs e)
         {
             if (chkContraseña.Checked == true)
@@ -105,11 +108,6 @@ namespace SistemaBookShare
             {
                 txtContra.UseSystemPasswordChar = true;
             }
-        }
-
-        private void btnSalir_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

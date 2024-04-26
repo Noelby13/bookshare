@@ -18,12 +18,6 @@ namespace SistemaBookShare.formularios
         }
 
 
-        //frmload
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-         MaxFormSize();
-
-        }
         private void MaxFormSize()
         {
             Left = Top = 0;
@@ -33,7 +27,7 @@ namespace SistemaBookShare.formularios
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void showForm(Form form)
@@ -65,6 +59,12 @@ namespace SistemaBookShare.formularios
         {
             showForm(new FrmUsuario());
 
+        }
+
+        //frmload
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            MaxFormSize();
         }
     }
 }
