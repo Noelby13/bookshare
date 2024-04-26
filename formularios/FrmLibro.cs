@@ -29,7 +29,7 @@ namespace SistemaBookShare.formularios
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            showForm(new FrmGuardarLibro());
         }
     }
 }

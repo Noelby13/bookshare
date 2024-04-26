@@ -16,5 +16,20 @@ namespace SistemaBookShare.formularios
         {
             InitializeComponent();
         }
+
+        private void showForm(Form form)
+        {
+            panelShowData.Controls.Clear();
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.TopLevel = false;
+            form.WindowState = FormWindowState.Maximized;
+            panelShowData.Controls.Add(form);
+            form.Show();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            showForm(new FrmGestionUsuario());
+        }
     }
 }

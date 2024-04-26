@@ -60,5 +60,11 @@ namespace SistemaBookShare.formularios
         {
 
         }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+            showForm(new FrmUsuario());
+
+        }
     }
 }
