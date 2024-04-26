@@ -196,6 +196,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="store\GlobalData.cs" />
     <EmbeddedResource Include="formularios\FrmGuardarLibro.resx">
       <DependentUpon>FrmGuardarLibro.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,7 +247,6 @@
   <ItemGroup>
     <Folder Include="helpers\" />
     <Folder Include="negocios\" />
-    <Folder Include="store\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="recursos\iconAdd24.png" />

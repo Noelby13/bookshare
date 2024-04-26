@@ -81,3 +81,4 @@ C:\Users\50584\Desktop\Sistema de gestion bibliotecaria\SistemaBookShare\obj\Deb
 C:\Users\50584\Desktop\Sistema de gestion bibliotecaria\SistemaBookShare\obj\Debug\SistemaBookShare.csproj.CopyComplete
 C:\Users\50584\Desktop\Sistema de gestion bibliotecaria\SistemaBookShare\obj\Debug\SistemaBookShare.exe
 C:\Users\50584\Desktop\Sistema de gestion bibliotecaria\SistemaBookShare\obj\Debug\SistemaBookShare.pdb
+C:\Users\50584\Desktop\Sistema de gestion bibliotecaria\SistemaBookShare\obj\Debug\SistemaBookShare.formularios.FrmGuardarLibro.resources
