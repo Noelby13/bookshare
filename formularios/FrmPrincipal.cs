@@ -15,6 +15,7 @@ namespace SistemaBookShare.formularios
         public FrmPrincipal()
         {
             InitializeComponent();
+            MaxFormSize();
         }
 
 

@@ -181,6 +181,7 @@
     <Compile Include="CustomControls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="dao\DEstudiante.cs" />
     <Compile Include="dao\DLibro.cs" />
     <Compile Include="dao\DUsuario.cs" />
     <Compile Include="entidades\Devolucion.cs" />
@@ -194,6 +195,12 @@
     </Compile>
     <Compile Include="formularios\FrmCRUDProducto.Designer.cs">
       <DependentUpon>FrmCRUDProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmGestionPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmGestionPrestamo.Designer.cs">
+      <DependentUpon>FrmGestionPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios\FrmGestionUsuario.cs">
       <SubType>Form</SubType>
@@ -213,6 +220,12 @@
     <Compile Include="formularios\FrmLibro.Designer.cs">
       <DependentUpon>FrmLibro.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios\FrmPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmPrestamo.Designer.cs">
+      <DependentUpon>FrmPrestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +244,7 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="negocios\EstudianteServices.cs" />
     <Compile Include="negocios\LibroServices.cs" />
     <Compile Include="negocios\ResultadoOperacion.cs" />
     <Compile Include="Program.cs" />
@@ -238,6 +252,9 @@
     <Compile Include="store\GlobalData.cs" />
     <EmbeddedResource Include="formularios\FrmCRUDProducto.resx">
       <DependentUpon>FrmCRUDProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmGestionPrestamo.resx">
+      <DependentUpon>FrmGestionPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmGestionUsuario.resx">
       <DependentUpon>FrmGestionUsuario.cs</DependentUpon>
@@ -247,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmLibro.resx">
       <DependentUpon>FrmLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmPrestamo.resx">
+      <DependentUpon>FrmPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaBookShare.negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace SistemaBookShare.formularios
         public FrmGestionUsuario()
         {
             InitializeComponent();
+        }
+
+        private void FrmGestionUsuario_Load(object sender, EventArgs e)
+        {
+            loadDataGrid();
+        }
+
+        private void loadDataGrid()
+        {
+            EstudianteServices estudiantes = new EstudianteServices();
+            dgvListaEstudiante.DataSource = estudiantes.listarEstudiante().Tables[0];
+            //oculta la columna de id
+            dgvListaEstudiante.Columns[0].Visible = false;
+            dgvListaEstudiante.Refresh();
+
+
         }
     }
 }

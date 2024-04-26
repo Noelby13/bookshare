@@ -28,28 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gBListaUsuarios = new System.Windows.Forms.GroupBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.dgvListaUsuario = new System.Windows.Forms.DataGridView();
+            this.dgvListaEstudiante = new System.Windows.Forms.DataGridView();
             this.gBUsurio = new System.Windows.Forms.GroupBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.chkContraseña = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
             this.btnELiminar = new SistemaBookShare.CustomControls.RoundedButton();
             this.btnActualizar = new SistemaBookShare.CustomControls.RoundedButton();
             this.btnGuardar = new SistemaBookShare.CustomControls.RoundedButton();
             this.btnLimpiar = new SistemaBookShare.CustomControls.RoundedButton();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.gBListaUsuarios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaEstudiante)).BeginInit();
             this.gBUsurio.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +57,8 @@
             this.panel1.Controls.Add(this.gBUsurio);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 696);
+            this.panel1.Size = new System.Drawing.Size(1443, 566);
             this.panel1.TabIndex = 2;
             // 
             // gBListaUsuarios
@@ -71,68 +67,68 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gBListaUsuarios.Controls.Add(this.txtUsuario);
-            this.gBListaUsuarios.Controls.Add(this.dgvListaUsuario);
+            this.gBListaUsuarios.Controls.Add(this.dgvListaEstudiante);
             this.gBListaUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.gBListaUsuarios.Location = new System.Drawing.Point(1027, 12);
+            this.gBListaUsuarios.Location = new System.Drawing.Point(770, 10);
+            this.gBListaUsuarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBListaUsuarios.Name = "gBListaUsuarios";
-            this.gBListaUsuarios.Size = new System.Drawing.Size(885, 672);
+            this.gBListaUsuarios.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBListaUsuarios.Size = new System.Drawing.Size(664, 546);
             this.gBListaUsuarios.TabIndex = 42;
             this.gBListaUsuarios.TabStop = false;
-            this.gBListaUsuarios.Text = "Buscar Usuario";
+            this.gBListaUsuarios.Text = "Buscar Estudiante";
             // 
             // txtUsuario
             // 
             this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(21, 28);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Location = new System.Drawing.Point(16, 23);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(857, 30);
+            this.txtUsuario.Size = new System.Drawing.Size(644, 26);
             this.txtUsuario.TabIndex = 14;
             // 
-            // dgvListaUsuario
+            // dgvListaEstudiante
             // 
-            this.dgvListaUsuario.AllowUserToAddRows = false;
-            this.dgvListaUsuario.AllowUserToDeleteRows = false;
-            this.dgvListaUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvListaEstudiante.AllowUserToAddRows = false;
+            this.dgvListaEstudiante.AllowUserToDeleteRows = false;
+            this.dgvListaEstudiante.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvListaUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvListaUsuario.BackgroundColor = System.Drawing.Color.White;
-            this.dgvListaUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(142)))), ((int)(((byte)(196)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(161)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
-            this.dgvListaUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaUsuario.GridColor = System.Drawing.Color.White;
-            this.dgvListaUsuario.Location = new System.Drawing.Point(21, 68);
-            this.dgvListaUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvListaUsuario.MultiSelect = false;
-            this.dgvListaUsuario.Name = "dgvListaUsuario";
-            this.dgvListaUsuario.ReadOnly = true;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            this.dgvListaUsuario.RowHeadersWidth = 51;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(161)))));
-            this.dgvListaUsuario.RowsDefaultCellStyle = dataGridViewCellStyle18;
-            this.dgvListaUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvListaUsuario.Size = new System.Drawing.Size(857, 594);
-            this.dgvListaUsuario.TabIndex = 15;
+            this.dgvListaEstudiante.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListaEstudiante.BackgroundColor = System.Drawing.Color.White;
+            this.dgvListaEstudiante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(142)))), ((int)(((byte)(196)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(161)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaEstudiante.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvListaEstudiante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaEstudiante.GridColor = System.Drawing.Color.White;
+            this.dgvListaEstudiante.Location = new System.Drawing.Point(16, 55);
+            this.dgvListaEstudiante.MultiSelect = false;
+            this.dgvListaEstudiante.Name = "dgvListaEstudiante";
+            this.dgvListaEstudiante.ReadOnly = true;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaEstudiante.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvListaEstudiante.RowHeadersWidth = 51;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(161)))));
+            this.dgvListaEstudiante.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvListaEstudiante.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaEstudiante.Size = new System.Drawing.Size(643, 483);
+            this.dgvListaEstudiante.TabIndex = 15;
             // 
             // gBUsurio
             // 
@@ -142,91 +138,19 @@
             this.gBUsurio.Controls.Add(this.btnActualizar);
             this.gBUsurio.Controls.Add(this.btnGuardar);
             this.gBUsurio.Controls.Add(this.btnLimpiar);
-            this.gBUsurio.Controls.Add(this.txtNombre);
-            this.gBUsurio.Controls.Add(this.chkContraseña);
+            this.gBUsurio.Controls.Add(this.txtCarnet);
             this.gBUsurio.Controls.Add(this.label2);
-            this.gBUsurio.Controls.Add(this.txtContrasena);
             this.gBUsurio.Controls.Add(this.label3);
-            this.gBUsurio.Controls.Add(this.label1);
-            this.gBUsurio.Controls.Add(this.txtUserName);
+            this.gBUsurio.Controls.Add(this.txtNombre);
             this.gBUsurio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBUsurio.Location = new System.Drawing.Point(12, 12);
+            this.gBUsurio.Location = new System.Drawing.Point(9, 10);
+            this.gBUsurio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBUsurio.Name = "gBUsurio";
-            this.gBUsurio.Size = new System.Drawing.Size(1009, 671);
+            this.gBUsurio.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBUsurio.Size = new System.Drawing.Size(757, 545);
             this.gBUsurio.TabIndex = 41;
             this.gBUsurio.TabStop = false;
-            this.gBUsurio.Text = "Datos del Usuario";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(145, 38);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(313, 29);
-            this.txtNombre.TabIndex = 32;
-            // 
-            // chkContraseña
-            // 
-            this.chkContraseña.AutoSize = true;
-            this.chkContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
-            this.chkContraseña.Location = new System.Drawing.Point(144, 178);
-            this.chkContraseña.Name = "chkContraseña";
-            this.chkContraseña.Size = new System.Drawing.Size(186, 26);
-            this.chkContraseña.TabIndex = 40;
-            this.chkContraseña.Text = "Mostrar contraseña";
-            this.chkContraseña.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 42);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Nombre:";
-            // 
-            // txtContrasena
-            // 
-            this.txtContrasena.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContrasena.Location = new System.Drawing.Point(145, 128);
-            this.txtContrasena.Margin = new System.Windows.Forms.Padding(4);
-            this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(313, 29);
-            this.txtContrasena.TabIndex = 39;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(483, 42);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 25);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Nombre de usuario:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 132);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Contraseña:";
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(680, 42);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(313, 29);
-            this.txtUserName.TabIndex = 33;
+            this.gBUsurio.Text = "Datos del Estudiante";
             // 
             // btnELiminar
             // 
@@ -240,9 +164,10 @@
             this.btnELiminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnELiminar.ForeColor = System.Drawing.Color.Black;
             this.btnELiminar.Image = global::SistemaBookShare.Properties.Resources.iconDelete24;
-            this.btnELiminar.Location = new System.Drawing.Point(561, 249);
+            this.btnELiminar.Location = new System.Drawing.Point(420, 126);
+            this.btnELiminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnELiminar.Name = "btnELiminar";
-            this.btnELiminar.Size = new System.Drawing.Size(133, 47);
+            this.btnELiminar.Size = new System.Drawing.Size(100, 38);
             this.btnELiminar.TabIndex = 44;
             this.btnELiminar.Text = "Eliminar";
             this.btnELiminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -262,9 +187,10 @@
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
             this.btnActualizar.Image = global::SistemaBookShare.Properties.Resources.icondUpdate24;
-            this.btnActualizar.Location = new System.Drawing.Point(422, 249);
+            this.btnActualizar.Location = new System.Drawing.Point(316, 126);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(133, 47);
+            this.btnActualizar.Size = new System.Drawing.Size(100, 38);
             this.btnActualizar.TabIndex = 43;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -284,9 +210,10 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Image = global::SistemaBookShare.Properties.Resources.iconAdd24;
-            this.btnGuardar.Location = new System.Drawing.Point(283, 249);
+            this.btnGuardar.Location = new System.Drawing.Point(212, 126);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(133, 47);
+            this.btnGuardar.Size = new System.Drawing.Size(100, 38);
             this.btnGuardar.TabIndex = 42;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -306,9 +233,10 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.Image = global::SistemaBookShare.Properties.Resources.iconClean24;
-            this.btnLimpiar.Location = new System.Drawing.Point(144, 249);
+            this.btnLimpiar.Location = new System.Drawing.Point(108, 126);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(133, 47);
+            this.btnLimpiar.Size = new System.Drawing.Size(100, 38);
             this.btnLimpiar.TabIndex = 41;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -316,18 +244,56 @@
             this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
+            // txtCarnet
+            // 
+            this.txtCarnet.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarnet.Location = new System.Drawing.Point(109, 31);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(236, 25);
+            this.txtCarnet.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Carnet";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(33, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Nombre:";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(108, 67);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(236, 25);
+            this.txtNombre.TabIndex = 33;
+            // 
             // FrmGestionUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 696);
+            this.ClientSize = new System.Drawing.Size(1443, 566);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmGestionUsuario";
             this.Text = "FrmGestionUsuario";
+            this.Load += new System.EventHandler(this.FrmGestionUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.gBListaUsuarios.ResumeLayout(false);
             this.gBListaUsuarios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaEstudiante)).EndInit();
             this.gBUsurio.ResumeLayout(false);
             this.gBUsurio.PerformLayout();
             this.ResumeLayout(false);
@@ -339,15 +305,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox gBListaUsuarios;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.DataGridView dgvListaUsuario;
+        private System.Windows.Forms.DataGridView dgvListaEstudiante;
         private System.Windows.Forms.GroupBox gBUsurio;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.CheckBox chkContraseña;
+        private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtNombre;
         private CustomControls.RoundedButton btnELiminar;
         private CustomControls.RoundedButton btnActualizar;
         private CustomControls.RoundedButton btnGuardar;
