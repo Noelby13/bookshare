@@ -33,10 +33,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new SistemaBookShare.CustomControls.GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutBackGround.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutMenu.SuspendLayout();
@@ -47,7 +46,7 @@
             // 
             this.tableLayoutBackGround.BackColor = System.Drawing.Color.Gray;
             this.tableLayoutBackGround.ColumnCount = 1;
-            this.tableLayoutBackGround.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1791F));
+            this.tableLayoutBackGround.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1343F));
             this.tableLayoutBackGround.Controls.Add(this.panelShowData, 0, 2);
             this.tableLayoutBackGround.Controls.Add(this.tableLayoutPanel1, 0, 1);
             this.tableLayoutBackGround.Controls.Add(this.gradientPanel1, 0, 0);
@@ -56,21 +55,21 @@
             this.tableLayoutBackGround.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutBackGround.Name = "tableLayoutBackGround";
             this.tableLayoutBackGround.RowCount = 3;
-            this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutBackGround.Size = new System.Drawing.Size(1791, 601);
+            this.tableLayoutBackGround.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutBackGround.Size = new System.Drawing.Size(1343, 488);
             this.tableLayoutBackGround.TabIndex = 4;
             // 
             // panelShowData
             // 
             this.panelShowData.BackColor = System.Drawing.Color.White;
             this.panelShowData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelShowData.Location = new System.Drawing.Point(0, 96);
+            this.panelShowData.Location = new System.Drawing.Point(0, 78);
             this.panelShowData.Margin = new System.Windows.Forms.Padding(0);
             this.panelShowData.Name = "panelShowData";
-            this.panelShowData.Size = new System.Drawing.Size(1791, 505);
+            this.panelShowData.Size = new System.Drawing.Size(1343, 410);
             this.panelShowData.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -82,24 +81,23 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.882353F));
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutMenu, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 40);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 33);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1791, 55);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1343, 44);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // flowLayoutMenu
             // 
             this.flowLayoutMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
             this.flowLayoutMenu.Controls.Add(this.btnAgregar);
-            this.flowLayoutMenu.Controls.Add(this.button1);
             this.flowLayoutMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutMenu.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutMenu.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutMenu.Name = "flowLayoutMenu";
-            this.flowLayoutMenu.Size = new System.Drawing.Size(1614, 55);
+            this.flowLayoutMenu.Size = new System.Drawing.Size(1210, 44);
             this.flowLayoutMenu.TabIndex = 3;
             // 
             // btnAgregar
@@ -108,10 +106,9 @@
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::SistemaBookShare.Properties.Resources.iconAdd28;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(4, 4);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregar.Location = new System.Drawing.Point(3, 3);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(132, 47);
+            this.btnAgregar.Size = new System.Drawing.Size(99, 38);
             this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Nuevo";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -119,21 +116,18 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button1
+            // label1
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::SistemaBookShare.Properties.Resources.iconAdd28;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(144, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Nuevo";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(16, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Productos";
             // 
             // gradientPanel1
             // 
@@ -145,7 +139,7 @@
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1791, 39);
+            this.gradientPanel1.Size = new System.Drawing.Size(1343, 32);
             this.gradientPanel1.TabIndex = 4;
             // 
             // label2
@@ -154,32 +148,22 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(80)))), ((int)(((byte)(33)))));
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Location = new System.Drawing.Point(9, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 25);
+            this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Libros";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Productos";
-            // 
             // FrmLibro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1791, 601);
+            this.ClientSize = new System.Drawing.Size(1343, 488);
             this.Controls.Add(this.tableLayoutBackGround);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmLibro";
             this.Text = "FrmLibro";
             this.tableLayoutBackGround.ResumeLayout(false);
@@ -204,6 +188,5 @@
         private CustomControls.GradientPanel gradientPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button button1;
     }
 }

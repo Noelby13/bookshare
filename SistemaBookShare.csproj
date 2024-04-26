@@ -181,6 +181,7 @@
     <Compile Include="CustomControls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="dao\DLibro.cs" />
     <Compile Include="dao\DUsuario.cs" />
     <Compile Include="entidades\Devolucion.cs" />
     <Compile Include="entidades\Estudiante.cs" />
@@ -188,6 +189,12 @@
     <Compile Include="entidades\Multa.cs" />
     <Compile Include="entidades\Prestamo.cs" />
     <Compile Include="entidades\Usuario.cs" />
+    <Compile Include="formularios\FrmCRUDProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmCRUDProducto.Designer.cs">
+      <DependentUpon>FrmCRUDProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios\FrmGestionUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,9 +231,14 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="negocios\LibroServices.cs" />
+    <Compile Include="negocios\ResultadoOperacion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="store\GlobalData.cs" />
+    <EmbeddedResource Include="formularios\FrmCRUDProducto.resx">
+      <DependentUpon>FrmCRUDProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmGestionUsuario.resx">
       <DependentUpon>FrmGestionUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,7 +294,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="helpers\" />
-    <Folder Include="negocios\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="recursos\favicon.ico" />
