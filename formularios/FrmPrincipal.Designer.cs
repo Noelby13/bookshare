@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.tableLayoutBackGround = new System.Windows.Forms.TableLayoutPanel();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblNombreCompleto = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelShowData = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelExitButton = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrestamo = new System.Windows.Forms.Button();
             this.btnLibro = new System.Windows.Forms.Button();
             this.btnDevoluciones = new System.Windows.Forms.Button();
             this.btnMulta = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
+            this.panelExitButton = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.tableLayoutBackGround.SuspendLayout();
             this.panelSuperior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutMenu.SuspendLayout();
             this.panelExitButton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutBackGround
@@ -107,6 +108,17 @@
             this.lblNombreCompleto.TabIndex = 5;
             this.lblNombreCompleto.Text = "Nombre";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SistemaBookShare.Properties.Resources.logoHorizontal;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(247, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // panelShowData
             // 
             this.panelShowData.BackColor = System.Drawing.Color.White;
@@ -149,29 +161,6 @@
             this.flowLayoutMenu.Name = "flowLayoutMenu";
             this.flowLayoutMenu.Size = new System.Drawing.Size(1539, 62);
             this.flowLayoutMenu.TabIndex = 3;
-            // 
-            // panelExitButton
-            // 
-            this.panelExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.panelExitButton.Controls.Add(this.btnCerrar);
-            this.panelExitButton.Location = new System.Drawing.Point(1539, 0);
-            this.panelExitButton.Margin = new System.Windows.Forms.Padding(0);
-            this.panelExitButton.Name = "panelExitButton";
-            this.panelExitButton.Size = new System.Drawing.Size(169, 62);
-            this.panelExitButton.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SistemaBookShare.Properties.Resources.logoHorizontal;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // btnPrestamo
             // 
@@ -257,6 +246,18 @@
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
+            // panelExitButton
+            // 
+            this.panelExitButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.panelExitButton.Controls.Add(this.btnCerrar);
+            this.panelExitButton.Location = new System.Drawing.Point(1539, 0);
+            this.panelExitButton.Margin = new System.Windows.Forms.Padding(0);
+            this.panelExitButton.Name = "panelExitButton";
+            this.panelExitButton.Size = new System.Drawing.Size(169, 62);
+            this.panelExitButton.TabIndex = 4;
+            // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -283,19 +284,21 @@
             this.ClientSize = new System.Drawing.Size(1708, 726);
             this.Controls.Add(this.tableLayoutBackGround);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.tableLayoutBackGround.ResumeLayout(false);
             this.tableLayoutBackGround.PerformLayout();
             this.panelSuperior.ResumeLayout(false);
             this.panelSuperior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutMenu.ResumeLayout(false);
             this.flowLayoutMenu.PerformLayout();
             this.panelExitButton.ResumeLayout(false);
             this.panelExitButton.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

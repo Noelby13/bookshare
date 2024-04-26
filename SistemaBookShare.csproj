@@ -49,6 +49,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>recursos\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azure.Core, Version=1.35.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
       <HintPath>packages\Azure.Core.1.35.0\lib\net472\Azure.Core.dll</HintPath>
@@ -282,6 +285,7 @@
     <Folder Include="negocios\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="recursos\favicon.ico" />
     <Content Include="recursos\iconAdd24.png" />
     <Content Include="recursos\iconAdd28.png" />
     <Content Include="recursos\iconBook32.png" />
