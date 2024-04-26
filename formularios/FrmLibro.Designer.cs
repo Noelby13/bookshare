@@ -137,6 +137,7 @@
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.BackColor = System.Drawing.Color.Gray;
             this.gradientPanel1.ColorLeft = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(233)))), ((int)(((byte)(223)))));
             this.gradientPanel1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(233)))), ((int)(((byte)(223)))));
             this.gradientPanel1.Controls.Add(this.label2);
