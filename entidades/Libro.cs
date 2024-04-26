@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaBookShare.entidades
 {
-    internal class Libro
+    public class Libro
     {
         public int idLibro { get; set; }
         public string titulo { get; set; }

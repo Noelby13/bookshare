@@ -190,6 +190,18 @@
     <Compile Include="entidades\Multa.cs" />
     <Compile Include="entidades\Prestamo.cs" />
     <Compile Include="entidades\Usuario.cs" />
+    <Compile Include="formularios\FrmBuscarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmBuscarEstudiante.Designer.cs">
+      <DependentUpon>FrmBuscarEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmBuscarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FrmBuscarLibro.Designer.cs">
+      <DependentUpon>FrmBuscarLibro.cs</DependentUpon>
+    </Compile>
     <Compile Include="formularios\FrmCRUDProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +262,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="store\GlobalData.cs" />
+    <EmbeddedResource Include="formularios\FrmBuscarEstudiante.resx">
+      <DependentUpon>FrmBuscarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmBuscarLibro.resx">
+      <DependentUpon>FrmBuscarLibro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmCRUDProducto.resx">
       <DependentUpon>FrmCRUDProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,7 +344,9 @@
     <Content Include="recursos\icondUpdate24.png" />
     <Content Include="recursos\iconLending32.png" />
     <Content Include="recursos\iconMulta32.png" />
+    <Content Include="recursos\iconOk32.png" />
     <Content Include="recursos\iconReturn32.png" />
+    <Content Include="recursos\iconSearch24.png" />
     <Content Include="recursos\iconUsuario32.png" />
     <None Include="recursos\logoHorizontal.jpg" />
     <None Include="recursos\LogoPrincipal.png" />

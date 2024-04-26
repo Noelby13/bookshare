@@ -117,4 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAgregarEstudiante.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAV9JREFUSEvdlE1OwzAQhSMQXIhbkIBdIPQGXCNb/i7AmqogFg63CT8td0CwhzfN
+        GDvluUkRqz7pk6rMzIs740y22Sofyt2iNuO8NtPc2afC2U9BfsuzA2dPJUfT1xOMj8G8qO3Xasxs39kj
+        LesXTrSNU15zszT4V1dVVW2pTVp/Mf/B2Qu14WrbQgrXwli160oHOuNFLdPmfgGLedCqNzp4mI9ZQYwX
+        i8XkblSqbRBecMeSY7xYrIuZqG0QHr7w5IAXi8XId6K2QfhwPpYTpd99YjMRL7UN+s8X4Lq+q20QWvT8
+        K3EJLxaLwWEbtQ2S3cKSY7xYrIu5VdsgWVw8OeDFYjH54+GJ2gbt3ZztYPqvrMAj/aY972DmyQ0rW5EX
+        DQedMGrHJVuRFQ7C2XO1SUtWLgZ+SQ1WgU06aF17oZe2byaC5PS2JaV28KMSL5vI3ZaPUWkWz3BbJEfT
+        N1JZ9g1/Gip5iaq4QAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnAgregarLibro.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAV9JREFUSEvdlE1OwzAQhSMQXIhbkIBdIPQGXCNb/i7AmqogFg63CT8td0CwhzfN
+        GDvluUkRqz7pk6rMzIs740y22Sofyt2iNuO8NtPc2afC2U9BfsuzA2dPJUfT1xOMj8G8qO3Xasxs39kj
+        LesXTrSNU15zszT4V1dVVW2pTVp/Mf/B2Qu14WrbQgrXwli160oHOuNFLdPmfgGLedCqNzp4mI9ZQYwX
+        i8XkblSqbRBecMeSY7xYrIuZqG0QHr7w5IAXi8XId6K2QfhwPpYTpd99YjMRL7UN+s8X4Lq+q20QWvT8
+        K3EJLxaLwWEbtQ2S3cKSY7xYrIu5VdsgWVw8OeDFYjH54+GJ2gbt3ZztYPqvrMAj/aY972DmyQ0rW5EX
+        DQedMGrHJVuRFQ7C2XO1SUtWLgZ+SQ1WgU06aF17oZe2byaC5PS2JaV28KMSL5vI3ZaPUWkWz3BbJEfT
+        N1JZ9g1/Gip5iaq4QAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnGuardar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAV9JREFUSEvdlE1OwzAQhSMQXIhbkIBdIPQGXCNb/i7AmqogFg63CT8td0CwhzfN
+        GDvluUkRqz7pk6rMzIs740y22Sofyt2iNuO8NtPc2afC2U9BfsuzA2dPJUfT1xOMj8G8qO3Xasxs39kj
+        LesXTrSNU15zszT4V1dVVW2pTVp/Mf/B2Qu14WrbQgrXwli160oHOuNFLdPmfgGLedCqNzp4mI9ZQYwX
+        i8XkblSqbRBecMeSY7xYrIuZqG0QHr7w5IAXi8XId6K2QfhwPpYTpd99YjMRL7UN+s8X4Lq+q20QWvT8
+        K3EJLxaLwWEbtQ2S3cKSY7xYrIu5VdsgWVw8OeDFYjH54+GJ2gbt3ZztYPqvrMAj/aY972DmyQ0rW5EX
+        DQedMGrHJVuRFQ7C2XO1SUtWLgZ+SQ1WgU06aF17oZe2byaC5PS2JaV28KMSL5vI3ZaPUWkWz3BbJEfT
+        N1JZ9g1/Gip5iaq4QAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

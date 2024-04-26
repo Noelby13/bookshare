@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionPrestamo));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvPrestamo = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtAutorPrincipal = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtFechaDevolucion = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtFechaPrestamo = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnEliminarLibro = new SistemaBookShare.CustomControls.RoundedButton();
+            this.btnAgregarEstudiante = new SistemaBookShare.CustomControls.RoundedButton();
+            this.btnEliminarEstudiante = new SistemaBookShare.CustomControls.RoundedButton();
+            this.btnAgregarLibro = new SistemaBookShare.CustomControls.RoundedButton();
+            this.txtLibro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnELiminar = new SistemaBookShare.CustomControls.RoundedButton();
             this.btnActualizar = new SistemaBookShare.CustomControls.RoundedButton();
@@ -42,16 +53,6 @@
             this.btnLimpiar = new SistemaBookShare.CustomControls.RoundedButton();
             this.txtCarnetEstudiante = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.roundedButton1 = new SistemaBookShare.CustomControls.RoundedButton();
-            this.roundedButton2 = new SistemaBookShare.CustomControls.RoundedButton();
-            this.roundedButton3 = new SistemaBookShare.CustomControls.RoundedButton();
-            this.roundedButton4 = new SistemaBookShare.CustomControls.RoundedButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamo)).BeginInit();
@@ -101,11 +102,11 @@
             this.dgvPrestamo.Name = "dgvPrestamo";
             this.dgvPrestamo.ReadOnly = true;
             this.dgvPrestamo.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(161)))));
-            this.dgvPrestamo.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(161)))));
+            this.dgvPrestamo.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPrestamo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPrestamo.Size = new System.Drawing.Size(817, 499);
             this.dgvPrestamo.TabIndex = 15;
@@ -124,15 +125,15 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Controls.Add(this.dtFechaDevolucion);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtFechaPrestamo);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.roundedButton4);
-            this.groupBox1.Controls.Add(this.roundedButton3);
-            this.groupBox1.Controls.Add(this.roundedButton2);
-            this.groupBox1.Controls.Add(this.roundedButton1);
-            this.groupBox1.Controls.Add(this.txtAutorPrincipal);
+            this.groupBox1.Controls.Add(this.btnEliminarLibro);
+            this.groupBox1.Controls.Add(this.btnAgregarEstudiante);
+            this.groupBox1.Controls.Add(this.btnEliminarEstudiante);
+            this.groupBox1.Controls.Add(this.btnAgregarLibro);
+            this.groupBox1.Controls.Add(this.txtLibro);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnELiminar);
             this.groupBox1.Controls.Add(this.btnActualizar);
@@ -151,16 +152,148 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del prestamo";
             // 
-            // txtAutorPrincipal
+            // textBox1
             // 
-            this.txtAutorPrincipal.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
-            this.txtAutorPrincipal.Location = new System.Drawing.Point(157, 65);
-            this.txtAutorPrincipal.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAutorPrincipal.Multiline = true;
-            this.txtAutorPrincipal.Name = "txtAutorPrincipal";
-            this.txtAutorPrincipal.ReadOnly = true;
-            this.txtAutorPrincipal.Size = new System.Drawing.Size(219, 35);
-            this.txtAutorPrincipal.TabIndex = 44;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
+            this.textBox1.Location = new System.Drawing.Point(157, 136);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(56, 25);
+            this.textBox1.TabIndex = 71;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(40, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 20);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "Dias a prestar";
+            // 
+            // dtFechaDevolucion
+            // 
+            this.dtFechaDevolucion.Enabled = false;
+            this.dtFechaDevolucion.Location = new System.Drawing.Point(157, 180);
+            this.dtFechaDevolucion.Name = "dtFechaDevolucion";
+            this.dtFechaDevolucion.Size = new System.Drawing.Size(219, 26);
+            this.dtFechaDevolucion.TabIndex = 69;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label10.Location = new System.Drawing.Point(17, 186);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(136, 20);
+            this.label10.TabIndex = 68;
+            this.label10.Text = "Fecha Devolucion";
+            // 
+            // dtFechaPrestamo
+            // 
+            this.dtFechaPrestamo.Enabled = false;
+            this.dtFechaPrestamo.Location = new System.Drawing.Point(161, 238);
+            this.dtFechaPrestamo.Name = "dtFechaPrestamo";
+            this.dtFechaPrestamo.Size = new System.Drawing.Size(219, 26);
+            this.dtFechaPrestamo.TabIndex = 67;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label8.Location = new System.Drawing.Point(22, 243);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(126, 20);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Fecha Prestamo";
+            // 
+            // btnEliminarLibro
+            // 
+            this.btnEliminarLibro.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarLibro.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnEliminarLibro.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnEliminarLibro.BorderRadius = 20;
+            this.btnEliminarLibro.BorderSize = 0;
+            this.btnEliminarLibro.FlatAppearance.BorderSize = 0;
+            this.btnEliminarLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarLibro.ForeColor = System.Drawing.Color.Transparent;
+            this.btnEliminarLibro.Image = global::SistemaBookShare.Properties.Resources.iconDelete24;
+            this.btnEliminarLibro.Location = new System.Drawing.Point(420, 65);
+            this.btnEliminarLibro.Name = "btnEliminarLibro";
+            this.btnEliminarLibro.Size = new System.Drawing.Size(37, 35);
+            this.btnEliminarLibro.TabIndex = 65;
+            this.btnEliminarLibro.TextColor = System.Drawing.Color.Transparent;
+            this.btnEliminarLibro.UseVisualStyleBackColor = false;
+            this.btnEliminarLibro.Visible = false;
+            // 
+            // btnAgregarEstudiante
+            // 
+            this.btnAgregarEstudiante.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEstudiante.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEstudiante.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregarEstudiante.BorderRadius = 20;
+            this.btnAgregarEstudiante.BorderSize = 0;
+            this.btnAgregarEstudiante.FlatAppearance.BorderSize = 0;
+            this.btnAgregarEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEstudiante.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEstudiante.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEstudiante.Image")));
+            this.btnAgregarEstudiante.Location = new System.Drawing.Point(381, 26);
+            this.btnAgregarEstudiante.Name = "btnAgregarEstudiante";
+            this.btnAgregarEstudiante.Size = new System.Drawing.Size(37, 35);
+            this.btnAgregarEstudiante.TabIndex = 64;
+            this.btnAgregarEstudiante.TextColor = System.Drawing.Color.Transparent;
+            this.btnAgregarEstudiante.UseVisualStyleBackColor = false;
+            this.btnAgregarEstudiante.Click += new System.EventHandler(this.btnAgregarEstudiante_Click);
+            // 
+            // btnEliminarEstudiante
+            // 
+            this.btnEliminarEstudiante.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarEstudiante.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnEliminarEstudiante.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnEliminarEstudiante.BorderRadius = 20;
+            this.btnEliminarEstudiante.BorderSize = 0;
+            this.btnEliminarEstudiante.FlatAppearance.BorderSize = 0;
+            this.btnEliminarEstudiante.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarEstudiante.ForeColor = System.Drawing.Color.Transparent;
+            this.btnEliminarEstudiante.Image = global::SistemaBookShare.Properties.Resources.iconDelete24;
+            this.btnEliminarEstudiante.Location = new System.Drawing.Point(420, 26);
+            this.btnEliminarEstudiante.Name = "btnEliminarEstudiante";
+            this.btnEliminarEstudiante.Size = new System.Drawing.Size(37, 35);
+            this.btnEliminarEstudiante.TabIndex = 63;
+            this.btnEliminarEstudiante.TextColor = System.Drawing.Color.Transparent;
+            this.btnEliminarEstudiante.UseVisualStyleBackColor = false;
+            this.btnEliminarEstudiante.Visible = false;
+            // 
+            // btnAgregarLibro
+            // 
+            this.btnAgregarLibro.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarLibro.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnAgregarLibro.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregarLibro.BorderRadius = 20;
+            this.btnAgregarLibro.BorderSize = 0;
+            this.btnAgregarLibro.FlatAppearance.BorderSize = 0;
+            this.btnAgregarLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarLibro.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAgregarLibro.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarLibro.Image")));
+            this.btnAgregarLibro.Location = new System.Drawing.Point(381, 65);
+            this.btnAgregarLibro.Name = "btnAgregarLibro";
+            this.btnAgregarLibro.Size = new System.Drawing.Size(37, 35);
+            this.btnAgregarLibro.TabIndex = 62;
+            this.btnAgregarLibro.TextColor = System.Drawing.Color.Transparent;
+            this.btnAgregarLibro.UseVisualStyleBackColor = false;
+            this.btnAgregarLibro.Click += new System.EventHandler(this.btnAgregarLibro_Click);
+            // 
+            // txtLibro
+            // 
+            this.txtLibro.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
+            this.txtLibro.Location = new System.Drawing.Point(157, 65);
+            this.txtLibro.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLibro.Multiline = true;
+            this.txtLibro.Name = "txtLibro";
+            this.txtLibro.ReadOnly = true;
+            this.txtLibro.Size = new System.Drawing.Size(219, 54);
+            this.txtLibro.TabIndex = 44;
             // 
             // label1
             // 
@@ -185,7 +318,7 @@
             this.btnELiminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnELiminar.ForeColor = System.Drawing.Color.Black;
             this.btnELiminar.Image = global::SistemaBookShare.Properties.Resources.iconDelete24;
-            this.btnELiminar.Location = new System.Drawing.Point(496, 418);
+            this.btnELiminar.Location = new System.Drawing.Point(477, 290);
             this.btnELiminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnELiminar.Name = "btnELiminar";
             this.btnELiminar.Size = new System.Drawing.Size(100, 38);
@@ -209,7 +342,7 @@
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnActualizar.ForeColor = System.Drawing.Color.Black;
             this.btnActualizar.Image = global::SistemaBookShare.Properties.Resources.icondUpdate24;
-            this.btnActualizar.Location = new System.Drawing.Point(384, 418);
+            this.btnActualizar.Location = new System.Drawing.Point(365, 290);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(100, 38);
@@ -231,8 +364,8 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardar.Image = global::SistemaBookShare.Properties.Resources.iconAdd24;
-            this.btnGuardar.Location = new System.Drawing.Point(280, 418);
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(261, 290);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 38);
@@ -242,6 +375,7 @@
             this.btnGuardar.TextColor = System.Drawing.Color.Black;
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
@@ -255,7 +389,7 @@
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.btnLimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiar.Image = global::SistemaBookShare.Properties.Resources.iconClean24;
-            this.btnLimpiar.Location = new System.Drawing.Point(176, 418);
+            this.btnLimpiar.Location = new System.Drawing.Point(157, 290);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(100, 38);
@@ -265,6 +399,7 @@
             this.btnLimpiar.TextColor = System.Drawing.Color.Black;
             this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // txtCarnetEstudiante
             // 
@@ -285,135 +420,6 @@
             this.label6.TabIndex = 27;
             this.label6.Text = "Carnet estudiante";
             // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton1.BorderRadius = 20;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.Image = global::SistemaBookShare.Properties.Resources.iconAdd24;
-            this.roundedButton1.Location = new System.Drawing.Point(381, 65);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(37, 35);
-            this.roundedButton1.TabIndex = 62;
-            this.roundedButton1.TextColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton2.BorderRadius = 20;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.Image = global::SistemaBookShare.Properties.Resources.iconDelete24;
-            this.roundedButton2.Location = new System.Drawing.Point(420, 29);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(37, 35);
-            this.roundedButton2.TabIndex = 63;
-            this.roundedButton2.TextColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.UseVisualStyleBackColor = false;
-            this.roundedButton2.Visible = false;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton3.BorderRadius = 20;
-            this.roundedButton3.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.ForeColor = System.Drawing.Color.Transparent;
-            this.roundedButton3.Image = global::SistemaBookShare.Properties.Resources.iconAdd24;
-            this.roundedButton3.Location = new System.Drawing.Point(381, 26);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(37, 35);
-            this.roundedButton3.TabIndex = 64;
-            this.roundedButton3.TextColor = System.Drawing.Color.Transparent;
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton4.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton4.BorderRadius = 20;
-            this.roundedButton4.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.BorderSize = 0;
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.ForeColor = System.Drawing.Color.Transparent;
-            this.roundedButton4.Image = global::SistemaBookShare.Properties.Resources.iconDelete24;
-            this.roundedButton4.Location = new System.Drawing.Point(420, 65);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(37, 35);
-            this.roundedButton4.TabIndex = 65;
-            this.roundedButton4.TextColor = System.Drawing.Color.Transparent;
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            this.roundedButton4.Visible = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(22, 226);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 20);
-            this.label8.TabIndex = 66;
-            this.label8.Text = "Fecha Prestamo";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(161, 221);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(219, 26);
-            this.dateTimePicker1.TabIndex = 67;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(17, 169);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 20);
-            this.label10.TabIndex = 68;
-            this.label10.Text = "Fecha Devolucion";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Location = new System.Drawing.Point(157, 163);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(219, 26);
-            this.dateTimePicker2.TabIndex = 69;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(40, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 20);
-            this.label2.TabIndex = 70;
-            this.label2.Text = "Dias a prestar";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F);
-            this.textBox1.Location = new System.Drawing.Point(157, 119);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 25);
-            this.textBox1.TabIndex = 71;
-            // 
             // FrmGestionPrestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,6 +428,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmGestionPrestamo";
             this.Text = "FrmGestionPrestamo";
+            this.Load += new System.EventHandler(this.FrmGestionPrestamo_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -441,15 +448,15 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtFechaDevolucion;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtFechaPrestamo;
         private System.Windows.Forms.Label label8;
-        private CustomControls.RoundedButton roundedButton4;
-        private CustomControls.RoundedButton roundedButton3;
-        private CustomControls.RoundedButton roundedButton2;
-        private CustomControls.RoundedButton roundedButton1;
-        private System.Windows.Forms.TextBox txtAutorPrincipal;
+        private CustomControls.RoundedButton btnEliminarLibro;
+        private CustomControls.RoundedButton btnAgregarEstudiante;
+        private CustomControls.RoundedButton btnEliminarEstudiante;
+        private CustomControls.RoundedButton btnAgregarLibro;
+        private System.Windows.Forms.TextBox txtLibro;
         private System.Windows.Forms.Label label1;
         private CustomControls.RoundedButton btnELiminar;
         private CustomControls.RoundedButton btnActualizar;

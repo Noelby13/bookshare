@@ -43,7 +43,7 @@ namespace SistemaBookShare.formularios
 
         private void btnPrestamo_Click(object sender, EventArgs e)
         {
-
+            showForm(new FrmPrestamo());
         }
 
         private void btnLibro_Click(object sender, EventArgs e)
